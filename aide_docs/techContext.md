@@ -1,41 +1,74 @@
 # Technical Context
 
-## Analysis Environment
-- Windows OS
-- Directory: d:\DeepseekBot\tauri-2.0
+## Core Technologies
+1. Backend
+   - Rust (core framework)
+   - WebView2 (Windows)
+   - WebKit (macOS)
+   - WebKitGTK (Linux)
 
-## Documentation Tools
-- File system traversal
-- Code analysis tools
-- Pattern matching and search capabilities
+2. Frontend
+   - Any web framework supported
+   - Specific integrations:
+     - Next.js
+     - Nuxt
+     - SvelteKit
+     - Leptos
+     - Qwik
+     - Trunk
+     - Vite
 
-## Technical Focus
-- Tauri 2.0 architecture
-- Core components and APIs
-- Cross-platform capabilities
+## Development Requirements
+1. System Requirements
+   - Rust toolchain
+   - Node.js (optional, for JS/TS projects)
+   - Platform-specific SDKs
+   - WebView dependencies
 
-## Security Considerations
+2. Build Tools
+   - Cargo (Rust package manager)
+   - npm/yarn/pnpm (for JS projects)
+   - Platform build tools
+   - Code signing tools
 
-1. Core Security Features
-   - Process isolation
-   - Sandboxing
-   - Permission system
-   - Resource restrictions
+3. Debug Tools
+   - Crabnebula DevTools
+   - VSCode extensions
+   - Browser DevTools
+   - Platform debuggers
 
-2. IPC Security
-   - Message validation
-   - Protocol security
-   - Channel encryption
-   - Access control
+## Testing Infrastructure
+1. Test Frameworks
+   - WebDriver support
+   - Rust test framework
+   - Frontend test tools
+   - Mocking utilities
 
-3. Application Security
-   - CSP implementation
-   - CORS policies
-   - Update security
-   - Runtime protection
+2. CI/CD Tools
+   - GitHub Actions support
+   - Platform-specific runners
+   - Automated signing
 
-4. Best Practices
-   - Minimize remote content
-   - Avoid CDN dependencies
-   - Use local assets
-   - Implement strict policies
+## Deployment Requirements
+1. Code Signing
+   - Windows certificates
+   - Apple certificates
+   - Linux signing keys
+
+2. Store Requirements
+   - App Store requirements
+   - Microsoft Store requirements
+   - Linux distribution requirements
+
+## Development Environment
+1. IDE Support
+   - VSCode integration
+   - Rust-Analyzer
+   - Debug configurations
+   - Task runners
+
+2. Local Tools
+   - CLI tools
+   - Development servers
+   - Hot reload support
+   - Build scripts
