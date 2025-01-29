@@ -1,66 +1,77 @@
 # System Patterns
 
-## Core Architecture
+## Core Architecture Patterns
 1. Multi-Process Architecture
-   - Main process (Rust)
-   - WebView process (Frontend)
-   - Optional sidecar processes
+   - Main process (Rust) with WebView isolation
+   - IPC through command/event system
+   - Sidecar processes for heavy tasks
+   - Plugin system for extensibility
 
-2. IPC System
-   - Command pattern for frontend-to-rust
-   - Event system for bidirectional communication
-   - Isolation boundaries for security
-
-3. Plugin Architecture
-   - Core plugins with capability-based permissions
-   - Custom plugin development support
-   - Mobile-specific plugin adaptations
-
-## Security Patterns
-1. Permission System
-   - Capability-based security model
+2. Security Model
+   - CSP-based content security
+   - Permission-based access control
+   - Resource isolation patterns
    - Runtime authority checks
-   - Plugin-specific permissions
 
-2. Content Security
-   - CSP implementation
-   - HTTP security headers
-   - Secure lifecycle management
+3. State Management
+   - Thread-safe global state
+   - Event-based updates
+   - Cached resource access
+   - Type-safe state sharing
+
+## Implementation Patterns
+1. Command System
+   - Type-safe command handlers
+   - Async/await patterns
+   - Error propagation
+   - State injection
+
+2. Event System
+   - Global event broadcasting
+   - Window-specific events
+   - Channel-based streaming
+   - Event filtering
+
+3. Resource Management
+   - Cached resource loading
+   - Path validation
+   - Permission checks
+   - Memory optimization
+
+## Integration Patterns
+1. Plugin Architecture
+   - Core plugin initialization
+   - Custom plugin development
+   - Permission management
+   - Frontend bindings
+
+2. Frontend Communication
+   - IPC message patterns
+   - Event handling
+   - Binary data transfer
+   - Error handling
+
+3. Platform Integration
+   - Native API access
+   - OS-specific features
+   - Window management
+   - System tray
 
 ## Development Patterns
-1. Configuration Management
-   - JSON-based config files
-   - Environment variables
-   - Build-time vs runtime config
+1. Error Handling
+   - Type-safe errors
+   - Error propagation
+   - User-friendly messages
+   - Debug information
 
-2. State Management
-   - Global state patterns
-   - Persistent storage
-   - State synchronization
+2. Testing
+   - Unit test patterns
+   - Integration testing
+   - E2E with WebDriver
+   - Mock systems
 
-3. Resource Handling
-   - Asset bundling
-   - Dynamic resource loading
-   - Platform-specific resources
-
-## Distribution Patterns
-1. Build System
-   - Platform-specific packaging
-   - Code signing
-   - Update system
-
-2. Store Distribution
-   - App Store requirements
-   - Microsoft Store packaging
-   - Linux distribution channels
-
-## Testing Patterns
-1. Integration Testing
-   - WebDriver support
-   - Mocking system
-   - CI/CD integration
-
-2. Debug Tooling
-   - DevTools integration
-   - VSCode debugging
-   - Logging system
+3. Security
+   - Input validation
+   - Resource protection
+   - Permission checks
+   - Secure defaults

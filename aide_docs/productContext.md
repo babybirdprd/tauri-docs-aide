@@ -1,69 +1,71 @@
 # Product Context
 
-## Purpose
-Tauri 2.0 is a framework for building secure, lightweight desktop and mobile applications using web technologies and Rust.
+## Core Purpose
+Tauri 2.0 is a framework for building secure, efficient desktop and mobile applications using web technologies and Rust, with a focus on:
+- Security-first architecture
+- Resource efficiency
+- Cross-platform compatibility
+- Developer productivity
 
-## Core Problems Solved
-1. Cross-Platform Development
-   - Unified codebase for desktop and mobile
-   - Native performance with web technologies
-   - Consistent behavior across platforms
+## Implementation Focus
+1. Security Architecture
+   - Process isolation
+   - Permission-based access
+   - Content Security Policy
+   - Resource protection
+   - Secure IPC
 
-2. Security
-   - Process isolation and sandboxing
-   - Capability-based permissions
-   - Secure IPC communication
-   - Content Security Policy enforcement
+2. Performance Optimization
+   - Small binary size
+   - Efficient memory usage
+   - Resource caching
+   - Lazy loading
+   - Native performance
 
-3. Resource Efficiency
-   - Small binary sizes
-   - Optimized memory usage
-   - Efficient process management
-   - Native system integration
+3. Development Experience
+   - Type-safe APIs
+   - Error handling
+   - Hot reload
+   - Debug tools
+   - Testing support
 
-4. Developer Experience
-   - Flexible frontend framework choice
-   - Strong debugging tools
-   - Comprehensive testing support
-   - Rich plugin ecosystem
-
-## Key Features
+## Technical Solutions
 1. Architecture
    - Multi-process security model
-   - WebView-based rendering
-   - Native system integration
+   - WebView rendering
    - Plugin system
+   - Event system
+   - State management
 
-2. Development
-   - Hot reload support
-   - DevTools integration
-   - Framework agnostic
-   - Extensive API access
+2. Development Tools
+   - CLI tools
+   - DevTools
+   - Build system
+   - Testing framework
+   - Debug utilities
 
-3. Distribution
-   - Multiple store support
-   - Auto-update system
-   - Code signing
-   - Platform packaging
+3. Platform Support
+   - Windows integration
+   - macOS features
+   - Linux compatibility
+   - Mobile support
+   - Cross-platform APIs
 
-4. Mobile Support
-   - iOS and Android targets
-   - Mobile-specific APIs
-   - Native mobile features
-   - Platform-specific optimizations
+## Target Use Cases
+1. Desktop Applications
+   - Enterprise apps
+   - Development tools
+   - Content creation
+   - System utilities
 
-## Target Users
-1. Desktop Application Developers
-   - Web developers moving to desktop
-   - Teams requiring cross-platform support
-   - Security-focused developers
+2. Mobile Applications
+   - Cross-platform apps
+   - Native integration
+   - Background services
+   - System access
 
-2. Mobile Application Developers
-   - Teams needing unified codebases
-   - Web-to-mobile developers
-   - Performance-focused developers
-
-3. Enterprise Developers
-   - Security-conscious organizations
-   - Teams with complex deployment needs
-   - Cross-platform enterprise apps
+3. Enterprise Solutions
+   - Security requirements
+   - Deployment needs
+   - Update systems
+   - Analytics
